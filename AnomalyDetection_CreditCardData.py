@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn import metrics
 from sklearn.metrics import accuracy_score, auc, roc_curve, precision_recall_curve, average_precision_score
 
-##Loading Credit Card Dataset from Hadoop using Pydoop
+##Loading Credit Card Dataset
 with hd.open("/user/hduser/creditcard.csv") as f:
     CreditCardData =  pd.read_csv(f, header=0)
     
